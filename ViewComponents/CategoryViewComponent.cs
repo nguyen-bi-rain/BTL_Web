@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShopQuanAo.Models;
 using ShopQuanAo.Respository;
-using SQLitePCL;
+
 
 namespace ShopQuanAo.ViewComponents
 {

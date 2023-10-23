@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6JVv3rhWG/1WR16fDoGWImbSH0F60y0Awx3hoq5pxyM=",
+  "Hash": "qRCUAEN/OAIstBmE0rPhjXLWsrqycSuumrX9Zsa6FvQ=",
   "Source": "ShopQuanAo",
   "BasePath": "_content/ShopQuanAo",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Áo huddie thể thao - 600.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\ao-huddie-the-thao-600.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Áo huddie thể thao - 600.jpg",
+      "RelativePath": "image/Adidas/ao-huddie-the-thao-600.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Áo huddie thể thao - 600.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\ao-huddie-the-thao-600.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Áo polo - 250.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Ao-polo-250.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Áo polo - 250.jpg",
+      "RelativePath": "image/Adidas/Ao-polo-250.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,15 +150,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Áo polo - 250.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Ao-polo-250.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Áo sơ mi - 450.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\ao-so-mi-450.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Áo sơ mi - 450.jpg",
+      "RelativePath": "image/Adidas/ao-so-mi-450.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Áo sơ mi - 450.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\ao-so-mi-450.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Áo thun cộc tay - 400.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\ao-thun-coc-tay-400.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Áo thun cộc tay - 400.jpg",
+      "RelativePath": "image/Adidas/ao-thun-coc-tay-400.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,15 +184,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Áo thun cộc tay - 400.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\ao-thun-coc-tay-400.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Quần áo cho bé - 350.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\quan-ao-cho-be-350.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Quần áo cho bé - 350.jpg",
+      "RelativePath": "image/Adidas/quan-ao-cho-be-350.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Quần áo cho bé - 350.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\quan-ao-cho-be-350.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Quần áo nỉ nam Adidas - 750.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\quan-ao-ni-nam-Adidas-750.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Quần áo nỉ nam Adidas - 750.jpg",
+      "RelativePath": "image/Adidas/quan-ao-ni-nam-Adidas-750.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Quần áo nỉ nam Adidas - 750.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\quan-ao-ni-nam-Adidas-750.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Quần áo thể thao - 1250.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\quan-ao-the-thao-1250.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Quần áo thể thao - 1250.jpg",
+      "RelativePath": "image/Adidas/quan-ao-the-thao-1250.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Quần áo thể thao - 1250.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\quan-ao-the-thao-1250.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Set thu đông cho bé - 450.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Adidas\\Set-thu-dong-cho-be-450.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Adidas/Set thu đông cho bé - 450.jpg",
+      "RelativePath": "image/Adidas/Set-thu-dong-cho-be-450.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Set thu đông cho bé - 450.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Adidas\\Set-thu-dong-cho-be-450.jpg"
     },
     {
       "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Banner\\banner1.jpg",
@@ -323,12 +323,12 @@
       "OriginalItemSpec": "wwwroot\\image\\Banner\\banner4.png"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Áo khoác lẻ Dior Chicago - 8650.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\adidas.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Áo khoác lẻ Dior Chicago - 8650.jpg",
+      "RelativePath": "image/Brand/adidas.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,15 +337,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Áo khoác lẻ Dior Chicago - 8650.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\adidas.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Áo khoác Nữ Dior - Bamboo China - 1230.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\dior.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Áo khoác Nữ Dior - Bamboo China - 1230.jpg",
+      "RelativePath": "image/Brand/dior.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -354,15 +354,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Áo khoác Nữ Dior - Bamboo China - 1230.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\dior.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Áo len Dior ABOUTIQUE - 1250.jpeg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\gucci.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Áo len Dior ABOUTIQUE - 1250.jpeg",
+      "RelativePath": "image/Brand/gucci.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -371,15 +371,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Áo len Dior ABOUTIQUE - 1250.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\gucci.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Áo oversize Dior 0 VL - 2300.jpeg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\nike.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Áo oversize Dior 0 VL - 2300.jpeg",
+      "RelativePath": "image/Brand/nike.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -388,15 +388,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Áo oversize Dior 0 VL - 2300.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\nike.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Áo thun nam cao cấp Dior x Bee - 5400.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\puma.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Áo thun nam cao cấp Dior x Bee - 5400.jpg",
+      "RelativePath": "image/Brand/puma.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -405,7 +405,109 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Áo thun nam cao cấp Dior x Bee - 5400.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\puma.jpg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Brand\\zara.jpg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Brand/zara.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Brand\\zara.jpg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\ao-khoac-le-Dior-Chicago-8650.jpg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Dior/ao-khoac-le-Dior-Chicago-8650.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\ao-khoac-le-Dior-Chicago-8650.jpg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\ao-khoac-Nu-Dior-Bamboo-China-1230.jpg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Dior/ao-khoac-Nu-Dior-Bamboo-China-1230.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\ao-khoac-Nu-Dior-Bamboo-China-1230.jpg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\ao-len-Dior-ABOUTIQUE-1250.jpeg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Dior/ao-len-Dior-ABOUTIQUE-1250.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\ao-len-Dior-ABOUTIQUE-1250.jpeg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\ao-oversize-Dior-0-VL-2300.jpeg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Dior/ao-oversize-Dior-0-VL-2300.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\ao-oversize-Dior-0-VL-2300.jpeg"
+    },
+    {
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\ao-thun-nam-cao-cap-DiorxBee-5400.jpg",
+      "SourceId": "ShopQuanAo",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
+      "BasePath": "_content/ShopQuanAo",
+      "RelativePath": "image/Dior/ao-thun-nam-cao-cap-DiorxBee-5400.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\ao-thun-nam-cao-cap-DiorxBee-5400.jpg"
     },
     {
       "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\banner 1 800x329.jpg",
@@ -425,12 +527,12 @@
       "OriginalItemSpec": "wwwroot\\image\\Dior\\banner 1 800x329.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Dior - Bumble teddy - Limited - 12000.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Dior-Bumble-teddy-Limited-12000.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Dior - Bumble teddy - Limited - 12000.jpg",
+      "RelativePath": "image/Dior/Dior-Bumble-teddy-Limited-12000.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -439,15 +541,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Dior - Bumble teddy - Limited - 12000.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\Dior-Bumble-teddy-Limited-12000.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Dior QCCC x Care - 2100.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Dior-QCCCxCare-2100.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Dior QCCC x Care - 2100.jpg",
+      "RelativePath": "image/Dior/Dior-QCCCxCare-2100.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -456,15 +558,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Dior QCCC x Care - 2100.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\Dior-QCCCxCare-2100.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Set Christian Dior nam - 1200.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Set-Christian-Dior-nam-1200.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Set Christian Dior nam - 1200.jpg",
+      "RelativePath": "image/Dior/Set-Christian-Dior-nam-1200.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -473,15 +575,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Set Christian Dior nam - 1200.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\Set-Christian-Dior-nam-1200.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Set phông Dior - D123 - 4500.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Dior\\Set-phong-Dior-D123-4500.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Dior/Set phông Dior - D123 - 4500.jpg",
+      "RelativePath": "image/Dior/Set-phong-Dior-D123-4500.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -490,15 +592,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Dior\\Set phông Dior - D123 - 4500.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Dior\\Set-phong-Dior-D123-4500.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Áo khoác lửng Gucci - Special Lux - 6500.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\ao-khoac-lung-Gucci-Special-Lux-6500.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Áo khoác lửng Gucci - Special Lux - 6500.jpg",
+      "RelativePath": "image/Gucci/ao-khoac-lung-Gucci-Special-Lux-6500.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -507,15 +609,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Áo khoác lửng Gucci - Special Lux - 6500.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\ao-khoac-lung-Gucci-Special-Lux-6500.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Áo phông Gucci Cottion Hand made - 12320.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\ao-phong-Gucci-Cottion-Hand-made-12320.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Áo phông Gucci Cottion Hand made - 12320.jpg",
+      "RelativePath": "image/Gucci/ao-phong-Gucci-Cottion-Hand-made-12320.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -524,15 +626,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Áo phông Gucci Cottion Hand made - 12320.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\ao-phong-Gucci-Cottion-Hand-made-12320.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Áo polo nam Gucci- Luxury Authentic - 12500.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\ao-polo-nam-Gucci-Bang-9000.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Áo polo nam Gucci- Luxury Authentic - 12500.jpg",
+      "RelativePath": "image/Gucci/ao-polo-nam-Gucci-Bang-9000.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -541,15 +643,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Áo polo nam Gucci- Luxury Authentic - 12500.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\ao-polo-nam-Gucci-Bang-9000.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Áo polo nam Gucci-Bang - 9000.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\ao-polo-nam-Gucci-Luxury-Authentic-12500.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Áo polo nam Gucci-Bang - 9000.jpg",
+      "RelativePath": "image/Gucci/ao-polo-nam-Gucci-Luxury-Authentic-12500.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -558,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Áo polo nam Gucci-Bang - 9000.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\ao-polo-nam-Gucci-Luxury-Authentic-12500.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Gucci - Love - 1900.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Gucci-Love-1900.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Gucci - Love - 1900.jpg",
+      "RelativePath": "image/Gucci/Gucci-Love-1900.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -575,15 +677,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Gucci - Love - 1900.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Gucci-Love-1900.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Gucci-Tiger Asia Limited - 13020.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Gucci-Tiger-Asia-Limited-13020.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Gucci-Tiger Asia Limited - 13020.jpg",
+      "RelativePath": "image/Gucci/Gucci-Tiger-Asia-Limited-13020.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -592,15 +694,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Gucci-Tiger Asia Limited - 13020.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Gucci-Tiger-Asia-Limited-13020.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Quần dài Gucci-CX2123 - 8400.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\quan-dai-Gucci-CX2123-8400.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Quần dài Gucci-CX2123 - 8400.jpg",
+      "RelativePath": "image/Gucci/quan-dai-Gucci-CX2123-8400.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -609,15 +711,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Quần dài Gucci-CX2123 - 8400.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\quan-dai-Gucci-CX2123-8400.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Set Gucci Technial Jersey Jacket - 16400.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Gucci\\Set-Gucci-Technial-Jersey-Jacket-16400.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Gucci/Set Gucci Technial Jersey Jacket - 16400.jpg",
+      "RelativePath": "image/Gucci/Set-Gucci-Technial-Jersey-Jacket-16400.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -626,7 +728,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Set Gucci Technial Jersey Jacket - 16400.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Gucci\\Set-Gucci-Technial-Jersey-Jacket-16400.jpg"
     },
     {
       "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Logo\\android-chrome-192x192.png",
@@ -748,12 +850,12 @@
       "OriginalItemSpec": "wwwroot\\image\\Logo\\logo.png"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Áo phông nữ - 430.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\ao-phong-nu-430.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Áo phông nữ - 430.jpg",
+      "RelativePath": "image/Nike/ao-phong-nu-430.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -762,15 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Áo phông nữ - 430.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\ao-phong-nu-430.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Áo phông thể thao - 450.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\ao-phong-the-thao-450.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Áo phông thể thao - 450.jpg",
+      "RelativePath": "image/Nike/ao-phong-the-thao-450.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -779,15 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Áo phông thể thao - 450.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\ao-phong-the-thao-450.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Áo thể thao lỡ tay - 350.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\ao-the-thao-lo-tay-350.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Áo thể thao lỡ tay - 350.jpg",
+      "RelativePath": "image/Nike/ao-the-thao-lo-tay-350.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,15 +898,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Áo thể thao lỡ tay - 350.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\ao-the-thao-lo-tay-350.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Bộ áo gió - 1000.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Bo-ao-gio-1000.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Bộ áo gió - 1000.jpg",
+      "RelativePath": "image/Nike/Bo-ao-gio-1000.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -813,15 +915,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Bộ áo gió - 1000.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\Bo-ao-gio-1000.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Bộ quần áo thể thao mùa hè - 750.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Bo-quan-ao-the-thao-mua-he-750.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Bộ quần áo thể thao mùa hè - 750.jpg",
+      "RelativePath": "image/Nike/Bo-quan-ao-the-thao-mua-he-750.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -830,15 +932,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Bộ quần áo thể thao mùa hè - 750.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\Bo-quan-ao-the-thao-mua-he-750.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Quần jogger - 600.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Quan-jogger-600.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Quần jogger - 600.jpg",
+      "RelativePath": "image/Nike/Quan-jogger-600.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,15 +949,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Quần jogger - 600.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\Quan-jogger-600.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Quần thể thao nam - 500.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\Quan-the-thao-nam-500.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/Quần thể thao nam - 500.jpg",
+      "RelativePath": "image/Nike/Quan-the-thao-nam-500.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -864,15 +966,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\Quần thể thao nam - 500.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\Quan-the-thao-nam-500.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\ZOE Collape - Nike - 1250.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Nike\\ZOE-Collape-Nike-1250.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Nike/ZOE Collape - Nike - 1250.jpg",
+      "RelativePath": "image/Nike/ZOE-Collape-Nike-1250.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -881,15 +983,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Nike\\ZOE Collape - Nike - 1250.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Nike\\ZOE-Collape-Nike-1250.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Áo free style nữ - 380.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\ao-free-style-nu-380.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Áo free style nữ - 380.jpg",
+      "RelativePath": "image/Puma/ao-free-style-nu-380.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -898,15 +1000,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Áo free style nữ - 380.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\ao-free-style-nu-380.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Áo huddie thể thao Puma - 750.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\ao-huddie-the-thao-Puma-750.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Áo huddie thể thao Puma - 750.jpg",
+      "RelativePath": "image/Puma/ao-huddie-the-thao-Puma-750.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -915,15 +1017,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Áo huddie thể thao Puma - 750.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\ao-huddie-the-thao-Puma-750.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Áo khoác gió nữ - 440.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\ao-khoac-gio-nu-440.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Áo khoác gió nữ - 440.jpg",
+      "RelativePath": "image/Puma/ao-khoac-gio-nu-440.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -932,15 +1034,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Áo khoác gió nữ - 440.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\ao-khoac-gio-nu-440.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Áo khoác gió thể thao - 450.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\ao-khoac-gio-the-thao-450.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Áo khoác gió thể thao - 450.jpg",
+      "RelativePath": "image/Puma/ao-khoac-gio-the-thao-450.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -949,15 +1051,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Áo khoác gió thể thao - 450.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\ao-khoac-gio-the-thao-450.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Áo sơ mi thể thao nam - 250.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\ao-so-mi-the-thao-nam-250.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Áo sơ mi thể thao nam - 250.jpg",
+      "RelativePath": "image/Puma/ao-so-mi-the-thao-nam-250.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -966,15 +1068,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Áo sơ mi thể thao nam - 250.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\ao-so-mi-the-thao-nam-250.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Bộ thể thao nữ - 550.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Bo-the-thao-nu-550.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Bộ thể thao nữ - 550.jpg",
+      "RelativePath": "image/Puma/Bo-the-thao-nu-550.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -983,15 +1085,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Bộ thể thao nữ - 550.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\Bo-the-thao-nu-550.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Puma x Neymar Jr - 1500.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\PumaxNeymar-Jr -1500.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Puma x Neymar Jr - 1500.jpg",
+      "RelativePath": "image/Puma/PumaxNeymar-Jr -1500.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1000,15 +1102,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Puma x Neymar Jr - 1500.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\PumaxNeymar-Jr -1500.jpg"
     },
     {
-      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Set thể thao ngoài trời - 570.jpg",
+      "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\image\\Puma\\Set-the-thao-ngoai-troi-570.jpg",
       "SourceId": "ShopQuanAo",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\",
       "BasePath": "_content/ShopQuanAo",
-      "RelativePath": "image/Puma/Set thể thao ngoài trời - 570.jpg",
+      "RelativePath": "image/Puma/Set-the-thao-ngoai-troi-570.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1017,7 +1119,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\Puma\\Set thể thao ngoài trời - 570.jpg"
+      "OriginalItemSpec": "wwwroot\\image\\Puma\\Set-the-thao-ngoai-troi-570.jpg"
     },
     {
       "Identity": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\wwwroot\\js\\main.js",

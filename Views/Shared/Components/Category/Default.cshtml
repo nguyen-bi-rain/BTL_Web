@@ -4,7 +4,7 @@
 @foreach(var item in Model)
 {
 
-    <a href="" class="nav-item nav-link">@item.Name</a>
+    <a asp-controller="Home" asp-action="ProductCategory" asp-route-id="@item.Id" class="nav-item nav-link">@item.Name</a>
     
 }
 
