@@ -16,24 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\document\Ki 5\Lap Trinh Web\ShopQuanAo
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Accounts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Accounts/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Accounts/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Accounts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Accounts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
+[F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = bG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/document/Ki 5/Lap Trinh Web/ShopQuanAo/Views/Home/Index.cshtml]
