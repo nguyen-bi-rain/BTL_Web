@@ -45,6 +45,7 @@ namespace ShopQuanAo.Controllers
         }
 
         // GET: Accounts/Create
+        [Route("/register")]
         public IActionResult Create()
         {
             ViewData["Idrole"] = new SelectList(_context.Roles, "Id", "Id");
