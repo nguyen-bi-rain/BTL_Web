@@ -15,7 +15,7 @@ namespace ShopQuanAo.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var products = _context.Products.Where(p => p.Newproduct == true).ToList();
+            var products = _context.Products.Where(p => p.Newproduct == true).OrderBy(p =>p.Id).Take(10).ToList();
             return View(products);
         }
     }

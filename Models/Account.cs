@@ -18,5 +18,12 @@ namespace ShopQuanAo.Models
 
         public virtual Role? IdroleNavigation { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
+
+        public Account(string? username, string? email, string? password)
+        {
+            Username = username;
+            Email = email;
+            Password = password;
+        }
     }
 }
