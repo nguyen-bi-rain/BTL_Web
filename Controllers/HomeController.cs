@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShopQuanAo.Models;
 using System.Diagnostics;
+using X.PagedList;
 
 namespace ShopQuanAo.Controllers
 {
@@ -15,10 +17,13 @@ namespace ShopQuanAo.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            var products = _context.Products.ToList();
-            return View(products);
+            int pageSize = 8;
+            int pageNum = page == null || page < 0 ? 1 : page.Value;
+            var products = _context.Products.AsNoTracking().OrderBy(x => x.Name);
+            PagedList<Product> list = new PagedList<Product>(products, pageNum, pageSize);
+            return View(list);
         }
         public IActionResult ProductCategory(int? id)
         {
