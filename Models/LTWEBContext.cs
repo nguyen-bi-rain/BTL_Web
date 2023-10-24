@@ -45,11 +45,7 @@ namespace ShopQuanAo.Models
                     .IsUnicode(false)
                     .HasColumnName("email");
 
-                entity.Property(e => e.Fullname)
-                    .HasMaxLength(100)
-                    .HasColumnName("fullname")
-                    .IsFixedLength();
-
+                
                 entity.Property(e => e.Idrole).HasColumnName("idrole");
 
                 entity.Property(e => e.Password)
@@ -57,10 +53,7 @@ namespace ShopQuanAo.Models
                     .IsUnicode(false)
                     .HasColumnName("password");
 
-                entity.Property(e => e.Phone)
-                    .HasMaxLength(11)
-                    .IsUnicode(false)
-                    .HasColumnName("phone");
+
 
                 entity.Property(e => e.Username)
                     .HasMaxLength(100)
