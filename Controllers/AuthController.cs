@@ -41,12 +41,14 @@ namespace ShopQuanAo.Controllers
                     }
                     else
                     {
+                        ViewBag.success = 1;
                         return RedirectToAction("Index", "Home");
                     }
                 }
                 else
                 {
                     ViewBag.error = "Invalid login ";
+                    ViewBag.success = 0;
                     return RedirectToAction("Login", "Auth");
                 }
 
@@ -60,7 +62,7 @@ namespace ShopQuanAo.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(Account account)
+        public async Task<IActionResult> Register(Account account,string comfirmPassword)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +85,8 @@ namespace ShopQuanAo.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            HttpContext.Session.Remove("Usernamr");
+            HttpContext.Session.Remove("Username");
+            ViewBag.success = 0;
             return RedirectToAction("Login", "Auth");
         }
 
