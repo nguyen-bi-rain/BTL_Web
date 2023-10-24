@@ -11181,24 +11181,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Thien\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\ShopQuanAo.csproj",
+      "projectUniqueName": "D:\\LtWeb\\BTL_Web\\ShopQuanAo.csproj",
       "projectName": "ShopQuanAo",
-      "projectPath": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\ShopQuanAo.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "F:\\document\\Ki 5\\Lap Trinh Web\\ShopQuanAo\\obj\\",
+      "projectPath": "D:\\LtWeb\\BTL_Web\\ShopQuanAo.csproj",
+      "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+      "outputPath": "D:\\LtWeb\\BTL_Web\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
