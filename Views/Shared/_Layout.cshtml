@@ -13,7 +13,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@
         <div class="row align-items-center py-3 px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
                 <a href="/" class="text-decoration-none">
-                    <img src="~/image/Logo/logo.png" alt="logo" width="260" height="37"/>
+                    <img src="~/image/Logo/logo.png" alt="logo" width="260" height="37" />
                 </a>
             </div>
             <div class="col-lg-6 col-6 text-left">
@@ -77,7 +77,7 @@
                 </form>
             </div>
             <div class="col-lg-3 col-6 text-right">
-                <a href="" class="btn border">
+                <a asp-action="Index" asp-controller="Cart" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
@@ -85,8 +85,6 @@
         </div>
     </div>
     <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
@@ -98,7 +96,7 @@
                 <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
                     <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
 
-                        @await Component.InvokeAsync("Category") 
+                        @await Component.InvokeAsync("Category")
 
 
                     </div>
@@ -119,7 +117,11 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
+<<<<<<< HEAD
+
+=======
                                 
+>>>>>>> master
                             @if (ViewBag.success == 0)
                             {
                                 <a asp-controller="Auth" asp-action="Login" class="nav-item nav-link">Login</a>
@@ -191,25 +193,17 @@
         </div>
     </div>
     <!-- Navbar End -->
-
-
     <!-- Featured Start -->
     <!-- Featured End -->
-
-
     <!-- Categories Start -->
     <!-- Products Start -->
     @RenderBody()
     <!-- Products End -->
     <!-- Vendor Start -->
     <!-- Vendor End -->
-
-
     <!-- Footer Start -->
     <partial name="_PartialFooter" />
     <!-- Footer End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
