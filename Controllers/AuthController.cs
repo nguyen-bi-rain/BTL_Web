@@ -37,8 +37,9 @@ namespace ShopQuanAo.Controllers
                     HttpContext.Session.SetString("Username", data.Username.ToString());
                     if (data.Idrole == 1)
                     {
-                        return RedirectToAction("Index", "Product");
-                    }
+                        return Redirect("/admin/products_admin/index");
+
+                    }   
                     else
                     {
                         ViewBag.success = 1;
@@ -82,6 +83,7 @@ namespace ShopQuanAo.Controllers
             }
             return View();
         }
+        [HttpPost]
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();

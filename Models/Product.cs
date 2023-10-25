@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopQuanAo.Models
 {
@@ -22,5 +23,7 @@ namespace ShopQuanAo.Models
 
         public virtual Category? IdcategoryNavigation { get; set; }
         public virtual ICollection<Orderdetail> Orderdetails { get; set; }
+        [NotMapped]
+        public IFormFile? image { get; set; }
     }
 }
