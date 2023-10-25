@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopQuanAo.Models
 {
@@ -16,7 +17,8 @@ namespace ShopQuanAo.Models
         public int? Quantity { get; set; }
         public decimal? Promationprice { get; set; }
         public string? Description { get; set; }
-        public string? Image { get; set; }
+        [NotMapped]
+        public FormFile? Image { get; set; }
         public bool? Newproduct { get; set; }
         public int? Idcategory { get; set; }
 
