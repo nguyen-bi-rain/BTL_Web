@@ -35,6 +35,7 @@ namespace ShopQuanAo.Controllers
                 if (data != null)
                 {
                     HttpContext.Session.SetString("Username", data.Username.ToString());
+                    HttpContext.Session.Set("UserId", data.Id);
                     if (data.Idrole == 1)
                     {
                         return RedirectToAction("Index", "Product");
@@ -87,7 +88,7 @@ namespace ShopQuanAo.Controllers
             HttpContext.Session.Clear();
             HttpContext.Session.Remove("Username");
             ViewBag.success = 0;
-            return RedirectToAction("Login", "Auth");
+            return RedirectToAction("Index", "Home");
         }
 
     }

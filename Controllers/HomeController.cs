@@ -23,6 +23,7 @@ namespace ShopQuanAo.Controllers
             int pageNum = page == null || page < 0 ? 1 : page.Value;
             var products = _context.Products.AsNoTracking().OrderBy(x => x.Name);
             PagedList<Product> list = new PagedList<Product>(products, pageNum, pageSize);
+            if(HttpContext.Session.GetString("Username") == null) ViewBag.success = 0;
             return View(list);
         }
         public IActionResult ProductCategory(int? id)

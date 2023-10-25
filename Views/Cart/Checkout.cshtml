@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@model CartViewModel
+@{
+    decimal sum = 20000;
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,34 +44,27 @@
     <!-- Page Header End -->
     <!-- Checkout Start -->
     <div class="container-fluid pt-5">
+        <form asp-controller="Cart" asp-action="Order">
         <div class="row px-xl-5">
             <div class="col-lg-8">
                 <div class="mb-4">
                     <h4 class="font-weight-semi-bold mb-4">Billing Address</h4>
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <label>First Name</label>
-                            <input class="form-control" type="text" placeholder="John">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Last Name</label>
-                            <input class="form-control" type="text" placeholder="Doe">
+                            <label>Full Name</label>
+                            <input class="form-control" type="text" name="FullName" placeholder="John">
                         </div>
                         <div class="col-md-6 form-group">
                             <label>E-mail</label>
-                            <input class="form-control" type="text" placeholder="example@email.com">
+                            <input class="form-control" type="text" name="Email" placeholder="example@email.com">
                         </div>
                         <div class="col-md-6 form-group">
                             <label>Mobile No</label>
-                            <input class="form-control" type="text" placeholder="+123 456 789">
+                            <input class="form-control" type="text" name="Phone" placeholder="+84 ">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Address Line 1</label>
-                            <input class="form-control" type="text" placeholder="123 Street">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>City</label>
-                            <input class="form-control" type="text" placeholder="New York">
+                            <label>Address</label>
+                            <input class="form-control" type="text" name="Address" placeholder="100 Cầu giấy, Hà Nội">
                         </div>
                     </div>
                 </div>
@@ -82,28 +79,42 @@
                     </div>
                     <div class="card-body">
                         <h5 class="font-weight-medium mb-3">Products</h5>
-                        <div class="d-flex justify-content-between">
-                            <p>Colorful Stylish Shirt 1</p>
-                            <p>$150</p>
-                        </div>
+                        @for(int i=0 ; i<Model.CartItems.Count ; i++)
+                        {
+                            var a = Model.CartItems[i];
+                            var b = Model.Quantity[i];
+                            <div class="d-flex justify-content-between">
+                                <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px;">@a.Name</p>
+                                <p>Price: @a.Price</p>
+                                <p>SL: @b</p>
+                            </div>
+                        }
                         <hr class="mt-0">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-medium">Shipping</h6>
-                            <h6 class="font-weight-medium">$10</h6>
+                            <h6 class="font-weight-medium">20.000 VND</h6>
                         </div>
                     </div>
                     <div class="card-footer border-secondary bg-transparent">
                         <div class="d-flex justify-content-between mt-2">
                             <h5 class="font-weight-bold">Total</h5>
-                            <h5 class="font-weight-bold">$160</h5>
+                            <h5 class="font-weight-bold">
+                                @for (int i = 0; i < Model.CartItems.Count; i++)
+                                {
+                                    sum += (decimal)Model.CartItems[i].Price * Model.Quantity[i];
+                                }
+                                @sum VND
+                            </h5>
+                            <input class="form-control" type="hidden" name="Total" value="@sum">
                         </div>
                     </div>
                     <div class="card-footer border-secondary bg-transparent">
-                        <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>
+                        <button type="submit" class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>
                     </div>
                 </div>
             </div>
         </div>
+        </form>
     </div>
     <!-- Checkout End -->
 </body>
