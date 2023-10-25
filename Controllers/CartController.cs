@@ -33,7 +33,7 @@ namespace ShopQuanAo.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToCart(int productId)
+        public IActionResult AddToCart(int id)
         {
             if (HttpContext.Session.Get<List<Product>>("Cart") == null)
             {
@@ -45,7 +45,7 @@ namespace ShopQuanAo.Controllers
             }
 
             // Thêm sản phẩm vào danh sách giỏ hàng
-            var product = db.Products.FirstOrDefault(p => p.Id == productId);
+            var product = db.Products.FirstOrDefault(p => p.Id == id);
             if (product != null)
             {
                 cartItems.Add(product);
@@ -55,6 +55,11 @@ namespace ShopQuanAo.Controllers
             HttpContext.Session.Set("Cart", cartItems);
 
             return RedirectToAction("Index", "Cart");
+        }
+
+        public IActionResult Checkout()
+        {
+            return View();
         }
     }
 }
