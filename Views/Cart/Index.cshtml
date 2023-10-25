@@ -1,4 +1,7 @@
-﻿@model List<Product>
+﻿@{
+    decimal sum = 0;
+}
+@model CartViewModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,23 +55,31 @@
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        @foreach (var product in Model)
+                        @for(int i=0 ; i< Model.CartItems.Count ; i++)
                         {
+                            var a = Model.CartItems[i];
+                            var b = Model.Quantity[i];
                             <tr>
-                                <td class="align-middle"><img src="@product.Image" alt="" style="width: 50px;"> Colorful Stylish Shirt</td>
-                                <td class="align-middle">@product.Price</td>
+                                <td class="align-middle"><img src="@a.Image" alt="" style="width: 50px;"> @a.Name</td>
+                                <td class="align-middle">@a.Price</td>
                                 <td class="align-middle">
                                     <div class="input-group quantity mx-auto" style="width: 100px;">
                                         <div class="input-group-btn">
-                                            <button class="btn btn-sm btn-primary btn-minus">
-                                                <i class="fa fa-minus"></i>
-                                            </button>
+                                            <form asp-controller="Cart" asp-action="Decrease" method="post">
+                                                <input type="hidden" name="id" value="@a.Id" />
+                                                <button class="btn btn-sm btn-primary btn-minus">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </form>                                         
                                         </div>
-                                        <input type="text" id="quantity" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                        <input type="text" id="quantity" class="form-control form-control-sm bg-secondary text-center" value="@b">
                                         <div class="input-group-btn">
-                                            <button class="btn btn-sm btn-primary btn-plus">
-                                                <i class="fa fa-plus"></i>
-                                            </button>
+                                            <form asp-controller="Cart" asp-action="Increase" method="post">
+                                                <input type="hidden" name="id" value="@a.Id" />
+                                                <button class="btn btn-sm btn-primary btn-plus">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </td>
@@ -82,7 +93,13 @@
                     <div class="card-footer border-secondary bg-transparent">
                         <div class="d-flex justify-content-between mt-2">
                             <h5 class="font-weight-bold">Total</h5>
-                            <h5 class="font-weight-bold" id="total"></h5>
+                            <h5 class="font-weight-bold" id="total">
+                            @for(int i=0 ; i<Model.CartItems.Count ; i++)
+                            {
+                                sum += (decimal) Model.CartItems[i].Price * Model.Quantity[i];
+                            }
+                            @sum VND
+                            </h5>
                         </div>
                         <form asp-controller="Cart" asp-action="Checkout" method="get">
                             <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
@@ -94,3 +111,6 @@
     <!-- Cart End -->
 </body>
 </html>
+
+
+
