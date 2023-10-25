@@ -17,12 +17,13 @@ namespace ShopQuanAo.Models
         public int? Quantity { get; set; }
         public decimal? Promationprice { get; set; }
         public string? Description { get; set; }
-        [NotMapped]
-        public FormFile? Image { get; set; }
+        public string? Image { get; set; }
         public bool? Newproduct { get; set; }
         public int? Idcategory { get; set; }
 
         public virtual Category? IdcategoryNavigation { get; set; }
         public virtual ICollection<Orderdetail> Orderdetails { get; set; }
+        [NotMapped]
+        public IFormFile? image { get; set; }
     }
 }

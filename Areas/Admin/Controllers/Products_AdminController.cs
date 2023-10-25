@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.EntityFrameworkCore.Migrations;
 using ShopQuanAo.Models;
 
 namespace ShopQuanAo.Areas.Admin.Controllers
@@ -60,18 +61,18 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,Quantity,Promationprice,Description,Image,Newproduct,Idcategory")] Product product)
+        public async Task<IActionResult> Create([Bind("Name,Price,Quantity,Promationprice,Description,Newproduct,Idcategory,image")] Product product)
         {
-            if(product.Image != null)
-            {
-                var file = Path.Combine(_hostEnvironment.ContentRootPath, "wwwroot\\Uploads", product.Image.FileName);
-                using (FileStream fileStream = new FileStream(file, FileMode.Create))
-                {
-                    await product.Image.CopyToAsync(fileStream);
-                }
-            }
+            
             if (ModelState.IsValid)
             {
+                var fileName = Path.Combine("wwwroot/image/Uploads", product.image.FileName);
+                using (FileStream fileStream = new FileStream(fileName, FileMode.Create))
+                {
+                    await product.image.CopyToAsync(fileStream);
+                }
+                product.Image = Path.Combine("/image/Uploads",product.image.FileName);
+
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
