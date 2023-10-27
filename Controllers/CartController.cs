@@ -36,6 +36,7 @@ namespace ShopQuanAo.Controllers
                 viewModel.CartItems = HttpContext.Session.Get<List<Product>>("Cart");
                 viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
             }
+            ViewBag.cartNumber = viewModel.CartItems.Count;
             return View(viewModel);
         }
 
@@ -58,6 +59,16 @@ namespace ShopQuanAo.Controllers
                 viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
             }
 
+            // chech trùng sản phẩm
+            for(int i=0; i< viewModel.CartItems.Count; i++)
+            {
+                if (viewModel.CartItems[i].Id == id)
+                {
+                    _toastNotification.AddAlertToastMessage("Product existed in Cart!");
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
             // Thêm sản phẩm vào danh sách giỏ hàng
             var product = db.Products.FirstOrDefault(p => p.Id == id);
             if (product != null)
@@ -72,7 +83,7 @@ namespace ShopQuanAo.Controllers
 
             _toastNotification.AddSuccessToastMessage("Add To Cart Success!");
 
-            return RedirectToAction("Index", "Cart");
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Checkout()
@@ -84,43 +95,6 @@ namespace ShopQuanAo.Controllers
             viewModel.CartItems = HttpContext.Session.Get<List<Product>>("Cart");
             viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
             return View(viewModel);
-        }
-
-
-        [HttpPost]
-        public IActionResult Increase(int id)
-        {
-            viewModel.CartItems = HttpContext.Session.Get<List<Product>>("Cart");
-            viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
-            Console.WriteLine(viewModel.CartItems[0].Id);
-            Console.WriteLine(id);
-
-            for(int i=0; i < viewModel.CartItems.Count ; i++)
-            {
-                if (viewModel.CartItems[i].Id == id - 1) viewModel.Quantity[i] = viewModel.Quantity[i] + 1;
-            }
-            HttpContext.Session.Set("Cart", viewModel.CartItems);
-            HttpContext.Session.Set("Quantity", viewModel.Quantity);
-            Console.WriteLine(viewModel.Quantity[0]);
-            return RedirectToAction("Index", "Cart");
-        }
-
-        [HttpPost]
-        public IActionResult Decrease(int id)
-        {
-            viewModel.CartItems = HttpContext.Session.Get<List<Product>>("Cart");
-            viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
-            Console.WriteLine(viewModel.CartItems[0].Id);
-            Console.WriteLine(id);
-
-            for (int i = 0; i < viewModel.CartItems.Count; i++)
-            {
-                if (viewModel.CartItems[i].Id == id + 1 && viewModel.Quantity[i] > 1) viewModel.Quantity[i] = viewModel.Quantity[i] - 1;
-            }
-            HttpContext.Session.Set("Cart", viewModel.CartItems);
-            HttpContext.Session.Set("Quantity", viewModel.Quantity);
-            Console.WriteLine(viewModel.Quantity[0]);
-            return RedirectToAction("Index", "Cart");
         }
 
         [HttpPost]
@@ -183,18 +157,40 @@ namespace ShopQuanAo.Controllers
             }
             return total;
         }
-        //[HttpPost]
-        //public IActionResult teat(Bind[jfhjhvjhdj] product, IFormFile image)
-        //{
-        //    // tạo product
 
-        //    // lấy tên ảnh gán vào product
+        [HttpPost]
+        public IActionResult UpdateQuantity(int id, int change)
+        {
+            // Retrieve cart items and quantities from the session
+            var cartItems = HttpContext.Session.Get<List<Product>>("Cart");
+            var quantities = HttpContext.Session.Get<List<int>>("Quantity");
 
-        //    // lưu ảnh vào foler chỉ định;
+            // Find the product in the cart
+            var product = cartItems.FirstOrDefault(p => p.Id == id);
 
-        //    // wwwroot/image/upload/ + product.image;
+            if (product != null)
+            {
+                // Find the index of the product in the cart
+                var index = cartItems.IndexOf(product);
 
-        //    return RedirectToAction("Index", "Cart");
-        //}
+                // Update the quantity
+                if(quantities[index] >= 1)
+                {
+                    quantities[index] += change;
+                }
+                
+                // Save the updated quantities to the session
+                HttpContext.Session.Set("Quantity", quantities);
+            }
+            // update total
+            decimal sum = 0;
+            for(int i = 0; i < cartItems.Count; i++)
+            {
+                sum += (decimal)cartItems[i].Price * quantities[i];
+            }
+            Console.WriteLine(sum);
+            // Return a success response
+            return Ok(sum);
+        }
     }
 }

@@ -79,7 +79,7 @@
             <div class="col-lg-3 col-6 text-right">
                 <a asp-action="Index" asp-controller="Cart" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
-                    <span class="badge">0</span>
+                    <span class="badge">@ViewBag.cartNumber</span>
                 </a>
             </div>
         </div>
@@ -124,7 +124,8 @@
                             }
                             else
                             {
-                                <a asp-controller="Auth" asp-action="Login" class="nav-item nav-link">Account</a>
+                                <a asp-controller="Auth" asp-action="Profile" class="nav-item nav-link">Account</a>
+                                <a asp-controller="Auth" asp-action="Logout" class="nav-item nav-link">Logout</a>
                               
                             }
                         </div>
