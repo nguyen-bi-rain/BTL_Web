@@ -74,7 +74,9 @@
                                             <input type="password" id="form2Example17" class="form-control form-control-lg" />
                                         </div> *@
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-dark btn-lg btn-block" type="submit">Register</button>
+                                            <form asp-controller="Auth" asp-action="Register" method="post">
+                                                <button class="btn btn-dark btn-lg btn-block" type="submit">Register</button>
+                                            </form>
                                         </div>
 
                                         <p class="mb-5 pb-lg-2" style="color: #393f81;">
@@ -83,8 +85,6 @@
                                         <a href="#!" class="small text-muted">Terms of use.</a>
                                         <a href="#!" class="small text-muted">Privacy policy</a>
                                     }
-
-
                                 </div>
                             </div>
                         </div>

@@ -1,16 +1,20 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
 using ShopQuanAo.Models;
+using System.Security.Principal;
 
 namespace ShopQuanAo.Controllers
 {
     public class AuthController : Controller
     {
         private readonly LTWEBContext db;
+        private readonly IToastNotification _toastNotification;
 
-        public AuthController(LTWEBContext db)
+        public AuthController(LTWEBContext db, IToastNotification toastNotification)
         {
             this.db = db;
+            _toastNotification = toastNotification;
         }
         [HttpGet]
         public IActionResult Login()
@@ -44,7 +48,9 @@ namespace ShopQuanAo.Controllers
                     else
                     {
                         ViewBag.success = 1;
+                        _toastNotification.AddSuccessToastMessage("Login Success!");
                         return RedirectToAction("Index", "Home");
+                        
                     }
                 }
                 else
@@ -64,7 +70,7 @@ namespace ShopQuanAo.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(Account account,string comfirmPassword)
+        public async Task<IActionResult> Register(Account account)
         {
             if (ModelState.IsValid)
             {
@@ -79,18 +85,22 @@ namespace ShopQuanAo.Controllers
                 else
                 {
                     ViewBag.error = "User already exists";
-                    return View();
                 }
             }
             return View();
         }
-        [HttpPost]
+
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            HttpContext.Session.Remove("Username");
             ViewBag.success = 0;
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Profile()
+        {
+            var account = db.Accounts.FirstOrDefault(a => a.Username == HttpContext.Session.GetString("Username"));
+            return View(account);
         }
 
     }

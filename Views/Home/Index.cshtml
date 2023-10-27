@@ -9,21 +9,13 @@
 @await Component.InvokeAsync("NewProduct")
 <!-- Products End -->
 <!-- Subscribe Start -->
-<div class="container-fluid bg-secondary my-5">
-    <div class="row justify-content-md-center py-5 px-xl-5">
-        <div class="col-md-6 col-12 py-5">
+<div class="container-fluid bg-secondary my-3">
+    <div class="row justify-content-md-center py-3 px-xl-5">
+        <div class="col-md-6 col-12 py-3">
             <div class="text-center mb-2 pb-2">
                 <h2 class="section-title px-5 mb-3"><span class="bg-secondary px-2">Stay Updated</span></h2>
                 <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.</p>
             </div>
-            <form action="">
-                <div class="input-group">
-                    <input type="text" class="form-control border-white p-4" placeholder="Email Goes Here">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary px-4">Subscribe</button>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 </div>
@@ -49,7 +41,12 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a asp-action="Details" asp-controller="Product" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                    <form asp-action="Details" asp-controller="Product" method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-sm text-dark p-0">
+                            <i class="fas fa-shopping-cart text-primary mr-1"></i>View Detail
+                        </button>
+                    </form>
                     @* change here *@
                     <form asp-action="AddToCart" asp-controller="Cart" method="post">
                         <input type="hidden" name="id" value="@item.Id" />
@@ -65,7 +62,6 @@
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mb-3">
                     <li class="page-item">
-
                         @Html.PagedListPager(Model,page => Url.Action("Index","Home",
                         new {page = page}),
                         new PagedListRenderOptions(){

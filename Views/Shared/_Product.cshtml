@@ -66,22 +66,14 @@
                 </a>
             </div>
             <div class="col-lg-6 col-6 text-left">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
-                    </div>
-                </form>
             </div>
             <div class="col-lg-3 col-6 text-right">
-                <a href="" class="btn border">
-                    <i class="fas fa-shopping-cart text-primary"></i>
-                    <span class="badge">0</span>
-                </a>
+                <form asp-controller="Cart" asp-action="Index">
+                    <button class="btn border">
+                        <i class="fas fa-shopping-cart text-primary"></i>
+                        <span class="badge">@ViewBag.cartNumber</span>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
@@ -115,8 +107,6 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            <a href="" class="nav-item nav-link">Login</a>
-                            <a href="" class="nav-item nav-link">Register</a>
                         </div>
                     </div>
                 </nav>

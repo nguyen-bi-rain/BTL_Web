@@ -15,13 +15,21 @@ namespace ShopQuanAo.Controllers
             _context = context;
         }
 
-        public IActionResult Index(int? page,string? searchtext) 
+        public IActionResult Index(int? page,string? searchtext)
         {
             int pageSize = 9;
             int pageNum = page == null || page < 0 ? 1 : page.Value;
             var products = searchtext == null ? _context.Products.AsNoTracking().OrderBy(x => x.Name) : _context.Products.AsNoTracking().Where(p =>p.Name.Contains(searchtext)).OrderBy(x => x.Name);
             PagedList<Product> list = new PagedList<Product>(products, pageNum, pageSize);
             ViewBag.searchtext = searchtext;
+            if (HttpContext.Session.Get<List<Product>>("Cart") == null)
+            {
+                ViewBag.cartNumber = 0;
+            }
+            else
+            {
+                ViewBag.cartNumber = HttpContext.Session.Get<List<Product>>("Cart").Count;
+            }
             return View(list);
         }
 
@@ -35,6 +43,14 @@ namespace ShopQuanAo.Controllers
             if(product == null)
             {
                 return Content("Sản Phẩm không tồn tại");
+            }
+            if (HttpContext.Session.Get<List<Product>>("Cart") == null)
+            {
+                ViewBag.cartNumber = 0;
+            }
+            else
+            {
+                ViewBag.cartNumber = HttpContext.Session.Get<List<Product>>("Cart").Count;
             }
             return View(product);
         }

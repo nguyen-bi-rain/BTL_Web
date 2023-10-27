@@ -24,6 +24,14 @@ namespace ShopQuanAo.Controllers
             var products = _context.Products.AsNoTracking().OrderBy(x => x.Name);
             PagedList<Product> list = new PagedList<Product>(products, pageNum, pageSize);
             if(HttpContext.Session.GetString("Username") == null) ViewBag.success = 0;
+            if(HttpContext.Session.Get<List<Product>>("Cart") == null)
+            {
+                ViewBag.cartNumber = 0;
+            }
+            else
+            {
+                ViewBag.cartNumber = HttpContext.Session.Get<List<Product>>("Cart").Count;
+            }
             return View(list);
         }
         public IActionResult ProductCategory(int? id)

@@ -7,7 +7,7 @@
 
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-5">
-    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
         <h1 class="font-weight-semi-bold text-uppercase mb-3">Shop Detail</h1>
         <div class="d-inline-flex">
             <p class="m-0"><a href="">Home</a></p>
@@ -38,7 +38,7 @@
             <h3 class="font-weight-semi-bold mb-4">$@Model.Price</h3>
             <p class="mb-4">@Model.Description</p>
             <div class="d-flex align-items-center mb-4 pt-2">
-                <div class="input-group quantity mr-3" style="width: 130px;">
+                @* <div class="input-group quantity mr-3" style="width: 130px;">
                     <div class="input-group-btn">
                         <button class="btn btn-primary btn-minus">
                             <i class="fa fa-minus"></i>
@@ -50,7 +50,7 @@
                             <i class="fa fa-plus"></i>
                         </button>
                     </div>
-                </div>
+                </div> *@
                 <form asp-action="AddToCart" asp-controller="Cart">
                     <input type="hidden" name="id" value="@Model.Id" />
                     <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>

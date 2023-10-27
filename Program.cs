@@ -13,7 +13,7 @@ builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 builder.Services.AddRazorPages().AddNToastNotifyNoty(new NotyOptions
 {
     ProgressBar = true,
-    Timeout = 5000
+    Timeout = 2000
 });
 
 
