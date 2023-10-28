@@ -1,6 +1,6 @@
 .vs/
 bin/
 obj/
-appsettings.Development
-appsettings
-ScaffoldingReadMe
+appsettings*.json
+appsettings*.Development.json
+ScaffoldingReadMe*.txt

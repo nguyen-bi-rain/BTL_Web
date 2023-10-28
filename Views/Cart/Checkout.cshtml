@@ -23,10 +23,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="~css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,18 +53,22 @@
                         <div class="col-md-6 form-group">
                             <label>Full Name</label>
                             <input class="form-control" type="text" name="FullName" placeholder="John">
+                            <span class="text-danger error-message full-name-error"></span>
                         </div>
                         <div class="col-md-6 form-group">
                             <label>E-mail</label>
-                            <input class="form-control" type="text" name="Email" placeholder="example@email.com">
+                                <input class="form-control" type="text" name="Email" placeholder="example@@email.com">
+                                <span class="text-danger error-message email-error"></span>
                         </div>
                         <div class="col-md-6 form-group">
                             <label>Mobile No</label>
                             <input class="form-control" type="text" name="Phone" placeholder="+84 ">
+                                <span class="text-danger error-message phone-error"></span>
                         </div>
                         <div class="col-md-6 form-group">
                             <label>Address</label>
                             <input class="form-control" type="text" name="Address" placeholder="100 Cầu giấy, Hà Nội">
+                                <span class="text-danger error-message address-error"></span>
                         </div>
                     </div>
                 </div>
@@ -118,5 +122,60 @@
     </div>
     <!-- Checkout End -->
 </body>
-
 </html>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $("form").submit(function (event) {
+                // Clear previous error messages
+                $(".error-message").text("");
+
+                var fullName = $("input[name='FullName']").val();
+                var email = $("input[name='Email']").val();
+                var phone = $("input[name='Phone']").val();
+                var address = $("input[name='Address']").val();
+                var total = $("input[name='Total']").val();
+
+                // var emailRegex = /^[A-Za-z0-9._%+-]+gmail\.com$/;
+                var phoneRegex = /^\d{10}$/;
+
+                // Validate Full Name
+                if (fullName === "") {
+                    $(".full-name-error").text("Full Name is required.");
+                    event.preventDefault();
+                }
+
+                // Validate Email
+                if (email === "") {
+                    $(".email-error").text("Email is required.");
+                    event.preventDefault();
+                }
+                // else if (!emailRegex.test(email)) {
+                //     $(".email-error").text("Invalid email format. It should be a gmail.com email address.");
+                //     event.preventDefault();
+                // }
+
+                // Validate Phone
+                if (phone === "") {
+                    $(".phone-error").text("Phone is required.");
+                    event.preventDefault();
+                } else if (!phoneRegex.test(phone)) {
+                    $(".phone-error").text("Phone number must be 10 digits.");
+                    event.preventDefault();
+                }
+
+                // Validate Address
+                if (address === "") {
+                    $(".address-error").text("Address is required.");
+                    event.preventDefault();
+                }
+
+                // Validate Total
+                if (total === "") {
+                    $(".total-error").text("Total is required.");
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+}

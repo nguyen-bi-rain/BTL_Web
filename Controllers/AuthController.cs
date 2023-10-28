@@ -32,11 +32,13 @@ namespace ShopQuanAo.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(Account account)
+        public IActionResult Login(LoginCredential loginCredential)
         {
-            if (HttpContext.Session.GetString("Username") == null)
+            if (ModelState.IsValid) // Check if the model is valid
             {
-                var data = db.Accounts.Where(a => a.Email.Equals(account.Email) && a.Password.Equals(account.Password)).FirstOrDefault();
+                // Perform your login logic here
+                var data = db.Accounts.FirstOrDefault(a => a.Email.Equals(loginCredential.Email) && a.Password.Equals(loginCredential.Password));
+
                 if (data != null)
                 {
                     HttpContext.Session.SetString("Username", data.Username.ToString());
@@ -48,13 +50,12 @@ namespace ShopQuanAo.Controllers
                 }
                 else
                 {
-                    ViewBag.error = "Invalid login ";
+                    ViewBag.error = "Invalid login";
                     ViewBag.success = 0;
-                    return RedirectToAction("Login", "Auth");
+                    return View(loginCredential); // Return the view with validation errors
                 }
-
             }
-            return View();
+            return View(loginCredential); // Return the view with validation errors
         }
         [HttpGet]
         public IActionResult Register()
@@ -78,9 +79,10 @@ namespace ShopQuanAo.Controllers
                 else
                 {
                     ViewBag.error = "User already exists";
+                    return View(account);
                 }
             }
-            return View();
+            return View(account);
         }
 
         public IActionResult Logout()
