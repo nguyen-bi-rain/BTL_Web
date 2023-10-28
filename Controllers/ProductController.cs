@@ -54,7 +54,10 @@ namespace ShopQuanAo.Controllers
             }
             return View(product);
         }
-        public IActionResult SearchByFillterPrice(string[]? priceRange)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult SearchByFillterPrice(string[] priceRange)
         {
             List<Product> products = _context.Products.ToList();
 
@@ -62,19 +65,17 @@ namespace ShopQuanAo.Controllers
             {
                 return View(products);
             }
-
-            var filteredProducts = new List<Product>();
-            foreach (var range in priceRange)
-            {
-                var priceRangeArray = range.Split('-');
-                int minPrice = int.Parse(priceRangeArray[0]);
-                int maxPrice = int.Parse(priceRangeArray[1]);
+        public IActionResult ProductByCategory(int id){
+            return View();
+        }
+        public IActionResult SortByPrice(string? price){
+            if(price == null){
 
                 var tempFilteredProducts = products.Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToList();
                 filteredProducts.AddRange(tempFilteredProducts);
             }
 
-            return View(filteredProducts.Distinct());
+            return RedirectToAction("Index",filteredProducts.Distinct());
         }
     }
 }

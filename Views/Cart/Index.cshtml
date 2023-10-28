@@ -2,19 +2,8 @@
     decimal sum = 0;
 }
 @model CartViewModel
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>EShopper - Bootstrap Shop Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-</head>
-
-<body>
     <!-- Page Header Start -->
+   <div id="content">
     <div class="container-fluid bg-secondary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
             <h1 class="font-weight-semi-bold text-uppercase mb-3">Shopping Cart</h1>
@@ -40,7 +29,7 @@
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        @for(int i=0 ; i< Model.CartItems.Count ; i++)
+                        @for (int i = 0; i < Model.CartItems.Count; i++)
                         {
                             var a = Model.CartItems[i];
                             var b = Model.Quantity[i];
@@ -69,24 +58,25 @@
                 </table>
             </div>
             <div class="col-lg-4">
-                    <div class="card-footer border-secondary bg-transparent">
-                        <div class="d-flex justify-content-between mt-2">
-                            <h5 class="font-weight-bold">Total</h5>
-                            <h5 class="font-weight-bold" id="total">
-                            @for(int i=0 ; i<Model.CartItems.Count ; i++)
+                <div class="card-footer border-secondary bg-transparent">
+                    <div class="d-flex justify-content-between mt-2">
+                        <h5 class="font-weight-bold">Total</h5>
+                        <h5 class="font-weight-bold" id="total">
+                            @for (int i = 0; i < Model.CartItems.Count; i++)
                             {
-                                sum += (decimal) Model.CartItems[i].Price * Model.Quantity[i];
+                                sum += (decimal)Model.CartItems[i].Price * Model.Quantity[i];
                             }
                             @sum VND
-                            </h5>
-                        </div>
-                        <form asp-controller="Cart" asp-action="Checkout" method="get">
-                            <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
-                        </form>
+                        </h5>
                     </div>
+                    <form asp-controller="Cart" asp-action="Checkout" method="get">
+                        <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+   </div>
     <!-- Cart End -->
 </body>
 </html>
