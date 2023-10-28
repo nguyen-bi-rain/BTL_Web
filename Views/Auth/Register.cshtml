@@ -53,20 +53,20 @@
                                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example17">User Name</label>
-
-                                            @Html.TextBoxFor(x => x.Username,new {@class = "form-control form-cotrol-lg",placeholder = "Enter Your Name",required = "required",autoforcus = "autoforcus"})
+                                            @Html.TextBoxFor(x => x.Username,new {@class = "form-control form-cotrol-lg",placeholder = "Enter Your Name", autoforcus = "autoforcus"})
+                                            <span asp-validation-for="Username" class="text-danger"></span>
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example17">Email address</label>
-
-                                            @Html.TextBoxFor(x => x.Email,new {@class = "form-control form-cotrol-lg",placeholder = "Enter Your Email address",required = "required"})
+                                            @Html.TextBoxFor(x => x.Email,new {@class = "form-control form-cotrol-lg",placeholder = "Enter Your Email address"})
+                                            <span asp-validation-for="Email" class="text-danger"></span>
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example27">Password</label>
-
                                             @Html.TextBoxFor(x => x.Password,new {@class = "form-control form-cotrol-lg",placeholder = "Enter Your Password",type = "password"})
+                                            <span asp-validation-for="Password" class="text-danger"></span>
                                         </div>
                                         @* <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example17">Comfirm Password</label>
