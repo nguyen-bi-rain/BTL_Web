@@ -1,0 +1,9 @@
+@{
+        Layout = "~/Views/Shared/_Product.cshtml";
+}
+@model IEnumerable<Product>
+    
+
+@foreach(var item in Model){
+    @await Html.PartialAsync("_ProductPartial",item)
+}

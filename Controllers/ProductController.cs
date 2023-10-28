@@ -54,28 +54,25 @@ namespace ShopQuanAo.Controllers
             }
             return View(product);
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [AutoValidateAntiforgeryToken]
-        public IActionResult SearchByFillterPrice(string[] priceRange)
-        {
-            List<Product> products = _context.Products.ToList();
+        
 
-            if (priceRange == null || priceRange.Contains("all"))
-            {
-                return View(products);
-            }
+        public IActionResult SearchByFillterPrice(string[]? priceRange)
+        {
+            List<Product> products = _context.Products.Where(p => p.Id == 1).ToList();
+
+
+
+            return View(products);
+        }
         public IActionResult ProductByCategory(int id){
             return View();
         }
         public IActionResult SortByPrice(string? price){
             if(price == null){
-
-                var tempFilteredProducts = products.Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToList();
-                filteredProducts.AddRange(tempFilteredProducts);
+                
             }
+            return View()
 
-            return RedirectToAction("Index",filteredProducts.Distinct());
         }
     }
 }
