@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NToastNotify;
 using ShopQuanAo.Models;
 using System.Security.Principal;
@@ -40,18 +41,10 @@ namespace ShopQuanAo.Controllers
                 {
                     HttpContext.Session.SetString("Username", data.Username.ToString());
                     HttpContext.Session.Set("UserId", data.Id);
-                    if (data.Idrole == 1)
-                    {
-                        return Redirect("/admin/products_admin/index");
-
-                    }   
-                    else
-                    {
-                        ViewBag.success = 1;
-                        _toastNotification.AddSuccessToastMessage("Login Success!");
-                        return RedirectToAction("Index", "Home");
-                        
-                    }
+                    HttpContext.Session.Set("UserRole", data.Idrole);
+                    ViewBag.success = 1;
+                    _toastNotification.AddSuccessToastMessage("Login Success!");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

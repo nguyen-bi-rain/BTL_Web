@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,6 +25,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/css/style.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -114,7 +117,11 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="/" class="nav-item nav-link active">Home</a>
                             <a href="/product" class="nav-item nav-link">Shop</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            @if (Accessor.HttpContext.Session.GetString("UserRole") == "1")
+                            {
+                                
+                                <a asp-area="Admin" asp-controller="Products_Admin" asp-action="Index" class="nav-item nav-link">DashBoard</a>
+                            }
                         </div>
                         <div class="navbar-nav ml-auto py-0">
                             @if (ViewBag.success == 0)
@@ -126,7 +133,6 @@
                             {
                                 <a asp-controller="Auth" asp-action="Profile" class="nav-item nav-link">Account</a>
                                 <a asp-controller="Auth" asp-action="Logout" class="nav-item nav-link">Logout</a>
-                              
                             }
                         </div>
                     </div>

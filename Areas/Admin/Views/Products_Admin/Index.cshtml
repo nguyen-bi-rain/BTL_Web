@@ -2,7 +2,8 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Product.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
 }
 
 <h1>Index</h1>
@@ -25,9 +26,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Promationprice)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Image)
             </th>
@@ -54,9 +53,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Promationprice)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Image)
