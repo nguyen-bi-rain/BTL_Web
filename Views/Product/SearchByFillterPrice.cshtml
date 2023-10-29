@@ -1,9 +1,34 @@
+
 @{
-        Layout = "~/Views/Shared/_Product.cshtml";
+    Layout = "~/Views/Shared/_Product.cshtml";
 }
 @model IEnumerable<Product>
-    
 
-@foreach(var item in Model){
-    @await Html.PartialAsync("_ProductPartial",item)
+
+    
+@foreach (var item in Model)
+{
+    @await Html.PartialAsync("ProductSearch",item)
+}
+
+
+
+
+
+@section Scripts{
+    <script>
+        $("#fillterbtn").on('click',function(e){
+            e.preventDefault();
+            var id = $("input[type = 'radio']:checked").attr("id")
+            $.ajax({
+                url: "/Product/SearchByFillterPrice",
+                type:"POST",
+                data: {price : id},
+                success : function(data){
+                    console.log(data)
+                    $("#view").html(data)
+                }
+            })
+        })
+    </script>
 }

@@ -1,0 +1,23 @@
+﻿
+
+@model IEnumerable<Product>
+
+<div class="col-12 pb-1">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <form action="">
+            <div class="input-group">
+                <input type="text" class="form-control" name="searchtext" placeholder="Search by name">
+                <div class="input-group-append">
+                    <button type="submit" class="input-group-text bg-transparent text-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    @foreach (var item in Model)
+    {
+        @await Html.PartialAsync("ProductSearch",item)
+    }
+

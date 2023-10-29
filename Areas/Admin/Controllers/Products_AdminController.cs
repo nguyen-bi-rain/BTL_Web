@@ -24,6 +24,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // GET: Admin/Products_Admin
+        [Route("/admin/san_pham")]
         public async Task<IActionResult> Index()
         {
             var lTWEBContext = _context.Products.Include(p => p.IdcategoryNavigation);
@@ -31,6 +32,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // GET: Admin/Products_Admin/Details/5
+        [Route("/admin/san_pham/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Products == null)
@@ -50,6 +52,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // GET: Admin/Products_Admin/Create
+        [Route("/admin/tao_san_pham")]
         public IActionResult Create()
         {
             ViewData["Idcategory"] = new SelectList(_context.Categories, "Id", "Id");
@@ -59,7 +62,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         // POST: Admin/Products_Admin/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("/admin/tao_san_pham")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Name,Price,Quantity,Promationprice,Description,Newproduct,Idcategory,image")] Product product)
         {
@@ -82,6 +85,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // GET: Admin/Products_Admin/Edit/5
+        [Route("/admin/sua_san_pham/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Products == null)
@@ -101,7 +105,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         // POST: Admin/Products_Admin/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("/admin/sua_san_pham/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,Quantity,Promationprice,Description,Image,Newproduct,Idcategory")] Product product)
         {
@@ -135,6 +139,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // GET: Admin/Products_Admin/Delete/5
+        [Route("/admin/xoa_san_pham/{id}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Products == null)
@@ -154,7 +159,7 @@ namespace ShopQuanAo.Areas.Admin.Controllers
         }
 
         // POST: Admin/Products_Admin/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost("/admin/xoa_san_pham/{id}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
