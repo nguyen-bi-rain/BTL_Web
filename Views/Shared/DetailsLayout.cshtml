@@ -129,89 +129,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-secondary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-            <h1 class="font-weight-semi-bold text-uppercase mb-3">Our Shop</h1>
-            <div class="d-inline-flex">
-                <p class="m-0"><a href="">Home</a></p>
-                <p class="m-0 px-2">-</p>
-                <p class="m-0">Shop</p>
-            </div>
-        </div>
-    </div>
+  
     <div class="container-fluid pt-5">
         <div class="row px-xl-5">
-            <!-- Shop Sidebar Start -->
-            <div class="col-lg-3 col-md-12">
-                <!-- Price Start -->
-                <div class="border-bottom mb-4 pb-4">
-                    <h5 class="font-weight-semi-bold mb-4">Filter by price</h5>
-                    <form asp-controller="Product" asp-action="SearchByFillterPrice" method="post">
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" class="custom-control-input" checked id="price-0" name="priceRange"
-                                   value="all">
-                            <label class="custom-control-label" for="price-all">All Price</label>
-                            <span class="badge border font-weight-normal">1000</span>
-                        </div>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" class="custom-control-input" id="price-1" name="priceRange"
-                                   value="0-1000000">
-                            <label class="custom-control-label" for="price-1">0 - 1000000 vnd</label>
-                        </div>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" class="custom-control-input" id="price-2" name="priceRange"
-                                   value="1000000-3000000">
-                            <label class="custom-control-label" for="price-2">1000000 vnd - 3000000 vnd </label>
-                        </div>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" class="custom-control-input" id="price-3" name="priceRange"
-                                   value="3000000-5000000">
-                            <label class="custom-control-label" for="price-3">3000000 vnd - 5000000 vnd</label>
-                        </div>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" class="custom-control-input" id="price-4" name="priceRange"
-                                   value="5000000-6000000">
-                            <label class="custom-control-label" for="price-4">5000000 vnd - 6000000 vnd</label>
-                        </div>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                            <input type="radio" class="custom-control-input" id="price-5" name="priceRange"
-                                   value="6000000-6000000">
-                            <label class="custom-control-label" for="price-5"> 6000000 vnd </label>
-                        </div>
-                        <button class="btn-primary btn mt-2" id="fillterbtn">Filter</button>
-                    </form>
+          
+                    @RenderBody()
                 </div>
-                <!-- Price End -->
-                <!-- Color Start -->
-                <!-- Size End -->
             </div>
-            <!-- Shop Sidebar End -->
-            <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-12">
-                <div class="row pb-3" id="view">
-                    <div class="col-12 pb-1">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <form action="">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="searchtext" placeholder="Search by name">
-                                    <div class="input-group-append">
-                                        <button type="submit" class="input-group-text bg-transparent text-primary">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
 
-                   
-                        @RenderBody()
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-   
     <!-- Navbar End -->
     <!-- Page Header Start -->
     <!-- Page Header End -->

@@ -5,145 +5,28 @@
 @using X.PagedList.Mvc.Core;
 @using X.PagedList.Web.Common;
 @model X.PagedList.IPagedList<ShopQuanAo.Models.Product>
-<div class="container-fluid bg-secondary mb-5">
-    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Our Shop</h1>
-        <div class="d-inline-flex">
-            <p class="m-0"><a href="">Home</a></p>
-            <p class="m-0 px-2">-</p>
-            <p class="m-0">Shop</p>
-        </div>
-    </div>
-</div>
+
 <!-- Shop Start -->
-<div class="container-fluid pt-5">
-    <div class="row px-xl-5">
-        <!-- Shop Sidebar Start -->
-        <div class="col-lg-3 col-md-12">
-            <!-- Price Start -->
-            <div class="border-bottom mb-4 pb-4">
-                <h5 class="font-weight-semi-bold mb-4">Filter by price</h5>
-                <form asp-controller="Product" asp-action="SearchByFillterPrice" method="post">
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" checked id="price-all" name="priceRange"
-                            value="all">
-                        <label class="custom-control-label" for="price-all">All Price</label>
-                        <span class="badge border font-weight-normal">1000</span>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="price-1" name="priceRange"
-                            value="0-1000000">
-                        <label class="custom-control-label" for="price-1">0 - 1000000 vnd</label>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="price-2" name="priceRange"
-                            value="1000000-3000000">
-                        <label class="custom-control-label" for="price-2">1000000 vnd - 3000000 vnd </label>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="price-3" name="priceRange"
-                            value="3000000-5000000">
-                        <label class="custom-control-label" for="price-3">3000000 vnd - 5000000 vnd</label>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                        <input type="checkbox" class="custom-control-input" id="price-4" name="priceRange"
-                            value="5000000-6000000">
-                        <label class="custom-control-label" for="price-4">5000000 vnd - 6000000 vnd</label>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                        <input type="checkbox" class="custom-control-input" id="price-5" name="priceRange"
-                            value="6000000-6000000">
-                        <label class="custom-control-label" for="price-5"> 6000000 vnd </label>
-                    </div>
-                    <button type="submit" class="btn-primary btn mt-2" id="fillterbtn">Filter</button>
-                </form>
-            </div>
-            <!-- Price End -->
 
-            <!-- Color Start -->
-            <!-- Size End -->
-        </div>
-        <!-- Shop Sidebar End -->
+@foreach(var item in Model)
+{
+@await Html.PartialAsync("_ProductPartial",item);
+}
+<div class="col-12 pb-1">
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mb-3">
+            <li class="page-item">
 
-
-        <!-- Shop Product Start -->
-        <div class="col-lg-9 col-md-12">
-            <div class="row pb-3">
-                <div class="col-12 pb-1">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="searchtext" placeholder="Search by name">
-                                <div class="input-group-append">
-                                    <button type="submit" class="input-group-text bg-transparent text-primary">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="dropdown ml-4">
-                            <button class="btn border dropdown-toggle" type="button" id="triggerId"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sort by
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
-                                <a class="dropdown-item" href="#" id="down">Gia Cao Den Thap</a>
-                                <a class="dropdown-item" href="#" id="up">Gia Thap Den Cao</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                @foreach (var item in Model)
+                @Html.PagedListPager(Model, page => Url.Action("Index", "Product",
+                new { page = page, searchtext = ViewBag.searchtext }),
+                new PagedListRenderOptions()
                 {
-
-                    @await Html.PartialAsync("_ProductPartial", item)
-                }
-
-
-                <div class="col-12 pb-1">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center mb-3">
-                            <li class="page-item">
-
-                                @Html.PagedListPager(Model, page => Url.Action("Index", "Product",
-                                         new { page = page, searchtext = ViewBag.searchtext }),
-                                         new PagedListRenderOptions()
-                                {
-                                    LiElementClasses = new string[] { "page-item" },
-                                    PageClasses = new string[] { "page-link" }
-                                })
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- Shop Product End -->
-    </div>
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" }
+                })
+            </li>
+        </ul>
+    </nav>
 </div>
 
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-            $("input[type='checkbox'][name='priceRange']").on('change', function () {
-                var selectedPrice = $("input[type='checkbox'][name='priceRange']:checked").map(function () {
-                    return $(this).val();
-                }).get();
-                console.log(selectedPrice);
-                $.ajax({
-                    type: "GET",
-                    url: '@Url.Action("SearchByFillterPrice", "Product")',
-                    data: { priceRange: JSON.stringify(selectedPrice) },
-                    success: function (response) {
-                        $("#content").html(response)
-                    },
-                    error: function () {
-                        console.log("hjehe");
-                    }
 
-                })
-            })
-        })
-    </script>
-}

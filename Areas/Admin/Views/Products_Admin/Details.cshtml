@@ -1,8 +1,10 @@
 ﻿@model ShopQuanAo.Models.Product
 
 @{
-    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    
     ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
 }
 
 <h1>Details</h1>
@@ -10,7 +12,7 @@
 <div>
     <h4>Product</h4>
     <hr />
-    <dl class="row">
+    <dl class="row m-2">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>

@@ -40,8 +40,12 @@ namespace ShopQuanAo.Controllers
             {
                 return NotFound();
             }
-            var lstProducts = _context.Products.Where(p => p.Idcategory == id).OrderBy(p => p.Id).ToList();
+            var lstProducts = _context.Products.Where(p => p.Idcategory == id).Include(p=> p.IdcategoryNavigation).OrderBy(p => p.Id).ToList();
             return View(lstProducts);
+        }
+        public IActionResult Contact()
+        {
+            return View();
         }
         public IActionResult Privacy()
         {

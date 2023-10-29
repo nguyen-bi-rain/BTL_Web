@@ -45,6 +45,8 @@ namespace ShopQuanAo.Controllers
                     HttpContext.Session.Set("UserId", data.Id);
                     HttpContext.Session.Set("UserRole", data.Idrole);
                     ViewBag.success = 1;
+                    HttpContext.Session.Set("Success", 1);
+
                     _toastNotification.AddSuccessToastMessage("Login Success!");
                     return RedirectToAction("Index", "Home");
                 }

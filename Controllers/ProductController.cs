@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Build.Evaluation;
 using Microsoft.EntityFrameworkCore;
+using NToastNotify;
 using ShopQuanAo.Models;
 using X.PagedList;
 
@@ -54,12 +57,22 @@ namespace ShopQuanAo.Controllers
             }
             return View(product);
         }
-        
 
-        public IActionResult SearchByFillterPrice(string[]? priceRange)
+        [HttpPost]
+        public IActionResult SearchByFillterPrice( string? price)
         {
-            List<Product> products = _context.Products.Where(p => p.Id == 1).ToList();
+            
+            
+            if (HttpContext.Session.Get<List<Product>>("Cart") == null)
+            {
+                ViewBag.cartNumber = 0;
+            }
+            else
+            {
+                ViewBag.cartNumber = HttpContext.Session.Get<List<Product>>("Cart").Count;
+            }
 
+            List<Product> products = null;
 
 
             return View(products);
@@ -73,6 +86,5 @@ namespace ShopQuanAo.Controllers
             }
             return View();
 
-        }
     }
 }
