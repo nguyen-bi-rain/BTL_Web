@@ -36,6 +36,15 @@ namespace ShopQuanAo.Controllers
                 viewModel.CartItems = HttpContext.Session.Get<List<Product>>("Cart");
                 viewModel.Quantity = HttpContext.Session.Get<List<int>>("Quantity");
             }
+         
+            if (HttpContext.Session.GetString("Username") != null)
+            {
+                ViewBag.success = 1;
+            }
+            else
+            {
+                ViewBag.success = 0;
+            }
             ViewBag.cartNumber = viewModel.CartItems.Count;
             return View(viewModel);
         }
