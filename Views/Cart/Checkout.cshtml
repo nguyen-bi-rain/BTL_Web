@@ -136,12 +136,15 @@
                 var address = $("input[name='Address']").val();
                 var total = $("input[name='Total']").val();
 
-                // var emailRegex = /^[A-Za-z0-9._%+-]+gmail\.com$/;
+                var emailRegex = /^[A-Za-z0-9._%+-]+@@gmail\.com$/;
                 var phoneRegex = /^\d{10}$/;
 
                 // Validate Full Name
                 if (fullName === "") {
-                    $(".full-name-error").text("Full Name is required.");
+                    $(".full-name-error").text("Nhập Tên.");
+                    event.preventDefault();
+                } else if (fullName.length <= 4) {
+                    $(".full-name-error").text("Tên có vẻ chưa đủ chi tiết.");
                     event.preventDefault();
                 }
 
@@ -150,23 +153,26 @@
                     $(".email-error").text("Email is required.");
                     event.preventDefault();
                 }
-                // else if (!emailRegex.test(email)) {
-                //     $(".email-error").text("Invalid email format. It should be a gmail.com email address.");
-                //     event.preventDefault();
-                // }
+                else if (!emailRegex.test(email)) {
+                    $(".email-error").text("Địa chỉ email phải có đuôi gmail.com.");
+                    event.preventDefault();
+                }
 
                 // Validate Phone
                 if (phone === "") {
                     $(".phone-error").text("Phone is required.");
                     event.preventDefault();
                 } else if (!phoneRegex.test(phone)) {
-                    $(".phone-error").text("Phone number must be 10 digits.");
+                    $(".phone-error").text("Số điện thoại phải có 10 chữ số.");
                     event.preventDefault();
                 }
 
                 // Validate Address
                 if (address === "") {
                     $(".address-error").text("Address is required.");
+                    event.preventDefault();
+                } else if (address.length <= 10) {
+                    $(".address-error").text("Địa chỉ có vẻ chưa đủ chi tiết.");
                     event.preventDefault();
                 }
 
