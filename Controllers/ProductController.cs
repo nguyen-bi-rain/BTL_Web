@@ -75,16 +75,36 @@ namespace ShopQuanAo.Controllers
             List<Product> products = null;
 
 
-            return View(products);
-        }
-        public IActionResult ProductByCategory(int id){
-            return View();
-        }
-        public IActionResult SortByPrice(string? price){
-            if(price == null){
-                
+           
+            if (price == null)
+            {
+                products = _context.Products.AsNoTracking().OrderBy(p => p.Promationprice).ToList();
+                return View(products);
             }
-            return View();
+            else
+            {
+                switch (price)
+                {
+                    case "price-1":
+                        products = _context.Products.AsNoTracking().Where(p => p.Promationprice >= 0 && p.Promationprice <= 1000000).OrderBy(p => p.Promationprice).ToList();
+                        break;
+                    case "price-2":
+                        products = _context.Products.AsNoTracking().Where(p => p.Promationprice >= 1000000 && p.Promationprice <= 3000000).OrderBy(p => p.Promationprice).ToList();
+                        break;
+                    case "price-3":
+                        products = _context.Products.AsNoTracking().Where(p => p.Promationprice >= 3000000 && p.Promationprice <= 5000000).OrderBy(p => p.Promationprice).ToList();
+                        break;
+                    case "price-4":
+                        products = _context.Products.AsNoTracking().Where(p => p.Promationprice >= 5000000 && p.Promationprice <= 6000000).OrderBy(p => p.Promationprice).ToList();
+                        break;
+                    case "price-5":
+                        products = _context.Products.AsNoTracking().Where(p => p.Promationprice > 6000000).OrderBy(p => p.Promationprice).ToList();
+                        break;
+                }
+            }
 
+            // Trả về PartialView
+            return PartialView("SortByPriceTable", products);
+        }
     }
 }
