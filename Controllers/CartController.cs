@@ -147,6 +147,7 @@ namespace ShopQuanAo.Controllers
             _toastNotification.AddSuccessToastMessage("Order Success!");
             return RedirectToAction("Index", "Cart");
         }
+
         // Hàm tính tổng tiền đơn hàng
         private decimal CalculateTotal(List<Product> products, List<int> quantities)
         {
@@ -164,6 +165,7 @@ namespace ShopQuanAo.Controllers
             // Retrieve cart items and quantities from the session
             var cartItems = HttpContext.Session.Get<List<Product>>("Cart");
             var quantities = HttpContext.Session.Get<List<int>>("Quantity");
+            decimal sum = 0;
 
             // Find the product in the cart
             var product = cartItems.FirstOrDefault(p => p.Id == id);
@@ -174,23 +176,70 @@ namespace ShopQuanAo.Controllers
                 var index = cartItems.IndexOf(product);
 
                 // Update the quantity
-                if(quantities[index] >= 1)
+                if (quantities[index] >= 1)
                 {
                     quantities[index] += change;
+                    if (quantities[index] >= 1)
+                    {
+                        for (int i = 0; i < cartItems.Count; i++)
+                        {
+                            sum += (decimal)cartItems[i].Price * quantities[i];
+                        }
+                    }
+                    else
+                    {
+                        quantities[index] -= change;
+                        for (int i = 0; i < cartItems.Count; i++)
+                        {
+                            sum += (decimal)cartItems[i].Price * quantities[i];
+                        }
+                    }
                 }
-                
+
                 // Save the updated quantities to the session
+                // update total
                 HttpContext.Session.Set("Quantity", quantities);
             }
-            // update total
-            decimal sum = 0;
-            for(int i = 0; i < cartItems.Count; i++)
-            {
-                sum += (decimal)cartItems[i].Price * quantities[i];
-            }
-            Console.WriteLine(sum);
             // Return a success response
             return Ok(sum);
         }
+
+        [HttpPost]
+        public IActionResult RemoveProduct(int id)
+        {
+            // Retrieve cart items and quantities from the session
+            var cartItems = HttpContext.Session.Get<List<Product>>("Cart");
+            var quantities = HttpContext.Session.Get<List<int>>("Quantity");
+            decimal sum = 0;
+
+            // Find the product in the cart
+            var product = cartItems.FirstOrDefault(p => p.Id == id);
+
+            if (product != null)
+            {
+                // Find the index of the product in the cart
+                var index = cartItems.IndexOf(product);
+
+                // Remove the product and its quantity from the lists
+                cartItems.RemoveAt(index);
+                quantities.RemoveAt(index);
+
+                // Save the updated cart items and quantities to the session
+                HttpContext.Session.Set("Cart", cartItems);
+                HttpContext.Session.Set("Quantity", quantities);
+
+                for (int i = 0; i < cartItems.Count; i++)
+                {
+                    sum += (decimal)cartItems[i].Price * quantities[i];
+                }
+
+                // Return a success response
+                return Ok(sum);
+            }
+
+            // Return a failure response or any other desired response
+            return Content("failure");
+        }
+
     }
 }

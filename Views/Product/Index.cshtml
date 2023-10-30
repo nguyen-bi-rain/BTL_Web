@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
 
     Layout = "~/Views/Shared/_Product.cshtml";
 }
@@ -7,10 +7,10 @@
 @model X.PagedList.IPagedList<ShopQuanAo.Models.Product>
 
 <!-- Shop Start -->
-
-@foreach(var item in Model)
+@foreach (var item in Model)
 {
-@await Html.PartialAsync("_ProductPartial",item);
+    @await Html.PartialAsync("_ProductPartial",item)
+    ;
 }
 <div class="col-12 pb-1">
     <nav aria-label="Page navigation">
@@ -28,5 +28,3 @@
         </ul>
     </nav>
 </div>
-
-

@@ -96,9 +96,28 @@ namespace ShopQuanAo.Controllers
 
         public IActionResult Profile()
         {
-            var account = db.Accounts.FirstOrDefault(a => a.Username == HttpContext.Session.GetString("Username"));
-            return View(account);
+            AccountOrderModel accountOrder = new AccountOrderModel();
+            accountOrder.account = db.Accounts.FirstOrDefault(a => a.Username == HttpContext.Session.GetString("Username"));
+            accountOrder.orders = db.Orders.Where(o => o.Idaccount == HttpContext.Session.Get<int>("UserId")).ToList();
+            accountOrder.products = null;
+            return View(accountOrder);
         }
 
+        [HttpPost]
+        public IActionResult OrderDetail(int id)
+        {
+            AccountOrderModel accountOrder = new AccountOrderModel();
+            accountOrder.account = db.Accounts.FirstOrDefault(a => a.Username == HttpContext.Session.GetString("Username"));
+            accountOrder.orders = db.Orders.Where(o => o.Idaccount == HttpContext.Session.Get<int>("UserId")).ToList();
+            var orderDetail = db.Orderdetails.Where(od => od.Idorder == id).ToList();
+            accountOrder.orderdetails = orderDetail;
+            accountOrder.products = new List<Product>();
+            foreach (var orderItem in orderDetail)
+            {
+                var product = db.Products.Where(p => p.Id == orderItem.Idproduct).FirstOrDefault();
+                accountOrder.products.Add(product);
+            }
+            return View("Profile", accountOrder);
+        }
     }
 }

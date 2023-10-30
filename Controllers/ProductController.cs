@@ -18,11 +18,11 @@ namespace ShopQuanAo.Controllers
             _context = context;
         }
 
-        public IActionResult Index(int? page,string? searchtext)
+        public IActionResult Index(int? page, string? searchtext)
         {
             int pageSize = 9;
             int pageNum = page == null || page < 0 ? 1 : page.Value;
-            var products = searchtext == null ? _context.Products.AsNoTracking().OrderBy(x => x.Name) : _context.Products.AsNoTracking().Where(p =>p.Name.Contains(searchtext)).OrderBy(x => x.Name);
+            var products = searchtext == null ? _context.Products.AsNoTracking().OrderBy(x => x.Name) : _context.Products.AsNoTracking().Where(p => p.Name.Contains(searchtext)).OrderBy(x => x.Name);
             PagedList<Product> list = new PagedList<Product>(products, pageNum, pageSize);
             ViewBag.searchtext = searchtext;
             if (HttpContext.Session.Get<List<Product>>("Cart") == null)
@@ -43,7 +43,7 @@ namespace ShopQuanAo.Controllers
             //    return NotFound();
             //}
             var product = _context.Products.Include(p => p.IdcategoryNavigation).FirstOrDefault(p => p.Id == id);
-            if(product == null)
+            if (product == null)
             {
                 return Content("Sản Phẩm không tồn tại");
             }
@@ -59,10 +59,10 @@ namespace ShopQuanAo.Controllers
         }
 
         [HttpPost]
-        public IActionResult SearchByFillterPrice( string? price)
+        public IActionResult SearchByFillterPrice(string? price)
         {
-            
-            
+
+
             if (HttpContext.Session.Get<List<Product>>("Cart") == null)
             {
                 ViewBag.cartNumber = 0;
@@ -73,8 +73,6 @@ namespace ShopQuanAo.Controllers
             }
 
             List<Product> products = null;
-
-
            
             if (price == null)
             {
