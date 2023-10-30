@@ -33,6 +33,14 @@ namespace ShopQuanAo.Controllers
             {
                 ViewBag.cartNumber = HttpContext.Session.Get<List<Product>>("Cart").Count;
             }
+            if (HttpContext.Session.GetString("Username") != null)
+            {
+                ViewBag.success = 1;
+            }
+            else
+            {
+                ViewBag.success = 0;
+            }
             return View(list);
         }
 
@@ -100,7 +108,6 @@ namespace ShopQuanAo.Controllers
                         break;
                 }
             }
-
             // Trả về PartialView
             return PartialView("SortByPriceTable", products);
         }
