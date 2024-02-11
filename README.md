@@ -2,7 +2,7 @@
 <h2>UTC Shop</h2>
 <h3>Member:</h3>
 <ul>
-  <li>Vũ Thế Nguyên - Leader</li>
+  <li>Vũ Thế Nguyên</li>
   <li>Vũ Văn Thiện</li>
   <li>Hoàng Trung Nguyên</li>
   <li>Hoàng Huy Hiệu</li>
